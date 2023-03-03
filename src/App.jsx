@@ -1,14 +1,13 @@
-import React from "react";
 import styles from "./style";
 import {
-  Navbar,
   Billing,
-  CardDeal,
   Business,
+  CardDeal,
   Clients,
   CTA,
-  Stats,
   Footer,
+  Navbar,
+  Stats,
   Testimonials,
   Hero,
 } from "./components";
@@ -20,39 +19,23 @@ const App = () => (
         <Navbar />
       </div>
     </div>
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+
+    <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Hero />
       </div>
     </div>
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Billing />
-      </div>
-    </div>
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
+        <Stats />
         <Business />
-      </div>
-    </div>
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <CTA />
-      </div>
-    </div>
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
+        <Billing />
         <CardDeal />
-      </div>
-    </div>
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Clients />
-      </div>
-    </div>
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
         <Testimonials />
+        <Clients />
+        <CTA />
+        <Footer />
       </div>
     </div>
   </div>
